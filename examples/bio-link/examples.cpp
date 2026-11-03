@@ -12,7 +12,7 @@ public:
 };
 
 int main() {
-    Robot motor;
+    Robot motor;  // Create a Robot object named "motor" (software, not a physical motor).
     constexpr int MAX_TEMP = 70;
     int temperature = 45;
     if (temperature < MAX_TEMP) motor.move(); else motor.stop();
