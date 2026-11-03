@@ -12,10 +12,10 @@ public:
 };
 
 int main() {
-    Robot motor;  // Create a Robot object named "motor" (software, not a physical motor).
+    Robot robot;  // Create an object named "robot" using the Robot class.
     constexpr int MAX_TEMP = 70;
     int temperature = 45;
-    if (temperature < MAX_TEMP) motor.move(); else motor.stop();
+    if (temperature < MAX_TEMP) robot.move(); else robot.stop();
 
     std::queue<Message> outgoing;
     outgoing.push({"sensor reading"});
