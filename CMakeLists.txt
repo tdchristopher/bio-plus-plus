@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.16)
+project(bio_plus_plus VERSION 0.1 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(biopp src/main.cpp)
+target_compile_options(biopp PRIVATE
+  $<$<CXX_COMPILER_ID:GNU,Clang>:-Wall -Wextra -pedantic>)
+enable_testing()
+add_executable(test_cell tests/test_cell.cpp)
+add_test(NAME cell_tests COMMAND test_cell)
