@@ -1,0 +1,9 @@
+build/
+*.exe
+*.o
+*.obj
+*.out
+biopp
+test_cell
+.vscode/
+.DS_Store
