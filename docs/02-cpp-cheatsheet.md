@@ -15,9 +15,9 @@ Read it: “Create an object named `dna` of class `DNA` from namespace `bpp`.”
 - `.` = access a member on an object, e.g. `dna.sequence()`.
 - `private:` = implementation details hidden from callers.
 - `public:` = operations callers can use.
-- `std::queue` = first-in, first-out collection.
-- `std::vector` = resizable collection.
-- `const` = an operation promises not to modify object state (in the shown member functions).
+- `std::queue` = waiting line.
+- `std::vector` = expandable list.
+- `const` = read-only.
 
 ## Tiny exercise
 Change the initial energy from `25` to `5`. Predict how many times `makeProtein()` succeeds, then compile and run.
